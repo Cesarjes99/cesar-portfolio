@@ -6,10 +6,11 @@ import Github from "../../assets/github-logo.jpg";
 
 function ProjectsSection() {
   return (
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <div className="projects">
         <ProjectCard
+          key={1}
           img={AMVIdesktop}
           title={"AMVI – Carpooling Web Platform"}
           description={
@@ -17,6 +18,7 @@ function ProjectsSection() {
           }
         />
         <ProjectCard
+          key={2}
           img={SpameDesktop}
           title={"SPAME – Business Website Redesign & Front-End Development"}
           description={
@@ -24,6 +26,7 @@ function ProjectsSection() {
           }
         />
         <ProjectCard
+          key={3}
           img={Github}
           title={"Personal Projects — GitHub Playground"}
           description={
