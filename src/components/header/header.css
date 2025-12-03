@@ -1,0 +1,48 @@
+header {
+  color: #000000;
+  background-color: #fafcfd;
+  padding: 35px 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header h2 {
+  font-size: 1rem;
+  font-weight: 450;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 450;
+}
+
+.resume-button {
+  border: 1px solid #0023c0;
+  color: #0023c0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0023c0;
+  color: #fafcfd;
+}

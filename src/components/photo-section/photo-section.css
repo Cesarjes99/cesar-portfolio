@@ -1,0 +1,26 @@
+.photo-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.photo-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 286px;
+}
+
+.cesar-photo {
+  width: 300px;
+}
+
+.get-in-touch-button {
+  padding: 15px 25px;
+  width: 160px;
+  background-color: #4a8bd9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
