@@ -1,0 +1,12 @@
+.project-container {
+  border: solid 2px #f4f6f7;
+}
+
+.img-container {
+  background-color: red;
+}
+
+.project-img {
+  width: 350px;
+  border-radius: 20px;
+}
