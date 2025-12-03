@@ -1,6 +1,6 @@
 import "./header.css";
 
-function Header() {
+function Header({ onResumeClick }) {
   return (
     <header>
       <div>
@@ -10,7 +10,9 @@ function Header() {
       <nav>
         <button>About</button>
         <button>Projects</button>
-        <button className="resume-button">Resume</button>
+        <button className="resume-button" onClick={onResumeClick}>
+          Resume
+        </button>
       </nav>
     </header>
   );
