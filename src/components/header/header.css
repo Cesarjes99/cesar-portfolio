@@ -37,12 +37,12 @@ header nav button {
 }
 
 .resume-button {
-  border: 1px solid #0023c0;
-  color: #0023c0;
+  border: 1px solid #4a8bd9;
+  color: #4a8bd9;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-button:hover {
-  background-color: #0023c0;
+  background-color: #4a8bd9;
   color: #fafcfd;
 }

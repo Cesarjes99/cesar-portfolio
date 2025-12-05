@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <section>
+    <section id="about">
       <h2>About me</h2>
       <p>
         I am a proactive and adaptable developer with strong problem-solving
