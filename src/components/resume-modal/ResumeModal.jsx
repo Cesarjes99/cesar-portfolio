@@ -4,15 +4,18 @@ function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const handleViewCV = () => {
-    // Aquí puedes agregar la lógica para ver el CV
-    // Por ejemplo, abrir un PDF o redirigir a una página
-    console.log("Ver CV");
+    // Abrir el PDF en una nueva pestaña
+    window.open("/Resume.pdf", "_blank");
   };
 
   const handleDownloadCV = () => {
-    // Aquí puedes agregar la lógica para descargar el CV
-    // Por ejemplo, descargar un archivo PDF
-    console.log("Descargar CV");
+    // Crear un enlace temporal para descargar el PDF
+    const link = document.createElement("a");
+    link.href = "/Resume.pdf";
+    link.download = "Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleOverlayClick = (e) => {

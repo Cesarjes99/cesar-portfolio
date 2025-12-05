@@ -1,16 +1,29 @@
+import { useState } from "react";
 import ProjectCard from "../project-card/ProjectCard";
+import GamesModal from "../games-modal/GamesModal";
 import "./projects-section.css";
 import AMVIdesktop from "../../assets/AMVI-desktop.png";
 import SpameDesktop from "../../assets/spame-desktop.png";
 import Github from "../../assets/github-logo.jpg";
 
 function ProjectsSection() {
+  const [isGamesModalOpen, setIsGamesModalOpen] = useState(false);
+
+  const openGamesModal = () => {
+    setIsGamesModalOpen(true);
+  };
+
+  const closeGamesModal = () => {
+    setIsGamesModalOpen(false);
+  };
+
   return (
     <section id="projects">
       <h2>Projects</h2>
       <div className="projects">
         <ProjectCard
           key={1}
+          link={"https://www.amvi.app/"}
           img={AMVIdesktop}
           title={"AMVI – Carpooling Web Platform"}
           description={
@@ -19,6 +32,7 @@ function ProjectsSection() {
         />
         <ProjectCard
           key={2}
+          link={"https://arifu.mx/"}
           img={SpameDesktop}
           title={"SPAME – Business Website Redesign & Front-End Development"}
           description={
@@ -27,13 +41,16 @@ function ProjectsSection() {
         />
         <ProjectCard
           key={3}
+          link={"https://github.com/Cesarjes99"}
           img={Github}
           title={"Personal Projects — GitHub Playground"}
           description={
             "A collection of small interactive projects and experiments built while learning JavaScript, React, and modern web development. These mini-apps show my growth, curiosity, and hands-on practice with real code"
           }
+          onClick={openGamesModal}
         />
       </div>
+      <GamesModal isOpen={isGamesModalOpen} onClose={closeGamesModal} />
     </section>
   );
 }
