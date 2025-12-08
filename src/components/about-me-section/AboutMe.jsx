@@ -1,3 +1,5 @@
+import "./about-me.css";
+
 function AboutMe() {
   return (
     <section id="about">
@@ -9,7 +11,7 @@ function AboutMe() {
         solutions.
       </p>
       <p>
-        I’m committed to continuous learning and improving my technical
+        I'm committed to continuous learning and improving my technical
         abilities
       </p>
     </section>
