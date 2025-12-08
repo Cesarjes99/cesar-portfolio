@@ -14,6 +14,20 @@ body {
   padding: 130px 65px 0 65px;
 }
 
+/* Responsive styles para tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 100px 30px 0 30px;
+  }
+}
+
+/* Responsive styles para móviles */
+@media (max-width: 480px) {
+  body {
+    padding: 90px 20px 0 20px;
+  }
+}
+
 button {
   font-family: "Inter", sans-serif;
 }

@@ -11,3 +11,10 @@ main {
 main > section {
   width: 100%;
 }
+
+/* Responsive styles para tablets y móviles */
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+  }
+}
