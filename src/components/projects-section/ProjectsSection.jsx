@@ -3,7 +3,7 @@ import ProjectCard from "../project-card/ProjectCard";
 import GamesModal from "../games-modal/GamesModal";
 import "./projects-section.css";
 import AMVIdesktop from "../../assets/AMVI-desktop.png";
-import SpameDesktop from "../../assets/spame-desktop.png";
+import AlcemaDesktop from "../../assets/alcema-desktop.png";
 import Github from "../../assets/github-logo.jpg";
 
 function ProjectsSection() {
@@ -32,11 +32,11 @@ function ProjectsSection() {
         />
         <ProjectCard
           key={2}
-          link={"https://arifu.mx/"}
-          img={SpameDesktop}
-          title={"SPAME – Business Website Redesign & Front-End Development"}
+          link={"https://www.alcema.com/"}
+          img={AlcemaDesktop}
+          title={"ALCEMA – Organic & Sustainable Agriculture Landing Page"}
           description={
-            "Collaborated on the SPAME website to enhance layout responsiveness, modernize UI components, and optimize the front-end experience using clean HTML/CSS and JavaScript improvements."
+            "Informative landing page I built from scratch on my own—from design to deployment. For an organic and sustainable agriculture business in Sonora."
           }
         />
         <ProjectCard

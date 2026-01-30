@@ -16,7 +16,7 @@ function ProjectCard(props) {
           href={props.link}
           target="_blank"
           onClick={handleClick}
-          style={{ cursor: props.onClick ? "pointer" : "default" }}
+          style={{ cursor: "pointer" }}
         >
           <img alt="project-img" className="project-img" src={props.img} />
         </a>

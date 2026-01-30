@@ -14,10 +14,6 @@ function ContactModal({ isOpen, onClose }) {
     window.location.href = "mailto:cesarjes1999@gmail.com";
   };
 
-  const handlePhoneClick = () => {
-    window.location.href = "tel:+526471171505";
-  };
-
   const handleLinkedInClick = () => {
     window.open("https://www.linkedin.com/in/cesardejesuslarrinaga/", "_blank");
   };
@@ -48,11 +44,12 @@ function ContactModal({ isOpen, onClose }) {
             </a>
           </div>
           <div className="contact-item">
-            <span className="contact-label">Phone number:</span>
+            <span className="contact-label">Phone number (WhatsApp):</span>
             <a
-              href="tel:+526471171505"
+              href="https://wa.me/526471171505"
               className="contact-link"
-              onClick={handlePhoneClick}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               +52 6471171505
             </a>
