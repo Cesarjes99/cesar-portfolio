@@ -52,12 +52,19 @@ header nav button {
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 450;
+  transition: color 0.3s ease;
+}
+
+header nav button:not(.resume-button):hover {
+  color: #4a8bd9;
 }
 
 .resume-button {
   border: 1px solid #4a8bd9;
   color: #4a8bd9;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .resume-button:hover {
